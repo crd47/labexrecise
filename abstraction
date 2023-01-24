@@ -1,0 +1,22 @@
+//abstract class
+abstract class Cars{
+public static void getAcceleration();
+public static void getKillometers();
+String yearofproduction;
+}
+public class Toyota extends Cars{
+int acceleration;
+int killometer;
+String yearofproduction;
+public static void getAcceleration(int acceleration){
+System.out.println("the maximum acceleration" + acceleration);
+}
+public static void getKillometers(int killometer){
+System.out.println("the total killometer the car driven "+ killometer;}
+Toyota(){
+}
+public static void main(String [] args){
+Toyota Avalon1=new Toyota();
+Avalon1.getAcceleration(130);//max speed of toyota avalon
+Avalon1.getKillometer(200000);//max killometers toyota avalon
+}
