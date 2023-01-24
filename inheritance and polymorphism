@@ -1,0 +1,35 @@
+// Declare Animal superclass
+public class  Animal{
+    private int age;
+    private String name;
+    private String color;
+    private String type;
+
+    public Animal() {
+
+    }
+
+    public void MakeSound() {
+        System.out.println("The Animal is Making sounds…");
+    }
+
+    public void setAge(int age) {
+        System.out.println("The Animal's age is " + age);
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+// Declare a sub Animal class
+public class Dog extends Animal {
+    private int numberofTeeth;
+    private boolean Status;//is it dangerous or not?
+
+
+    public Dog() {
+        // Dog constructor calling the constructor of the superclass
+        super();
+    }
+}
