@@ -1,0 +1,38 @@
+public class Shapes{
+  int area;
+  int perimeter;
+ public static void getArea();//overloaded method
+ public static void getPerimeter();//overloaded method
+ class Circle extends Shapes{
+ int area;
+ int perimeter;
+ int radius;
+ Circle(){ //constructor for circle class
+ }
+ 
+ public static void getArea(int radius){
+   area=3.14*radius*radius;
+   System.out.print("the area is "+ area);}
+ publc static void getPerimeter(){
+ perimeter=2*3.14*radius;
+ System.out.print("the perimeter is "+ perimeter);}
+ 
+}
+class Rectangel extends Shapes{
+int area;
+ int perimeter;
+ int length;
+ int width;
+ Rectangle(){ //constructor for rectangle class
+ }
+ public static void getArea(int length,int width){
+   area=length*width;
+   System.out.print("the area is "+ area);}
+ publc static void getPerimeter(int length,int width){
+ perimeter=2*(length+width);
+ System.out.print("the perimeter is "+ perimeter);}}
+ public static void main(String[]args){
+ Circle c1=new Circle();
+ c1.getArea(5);  //calculates the area as a circle
+ c1.getPerimeter(5); }
+ 
